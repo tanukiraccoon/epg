@@ -43,7 +43,6 @@ program
   )
   .addOption(
     new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
-      .default(1)
       .argParser(parseInt)
       .env('MAX_CONNECTIONS')
   )
@@ -287,3 +286,4 @@ function getLogoForChannel(channel: Channel): string | null {
 
   return null
 }
+
